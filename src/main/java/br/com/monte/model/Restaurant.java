@@ -4,14 +4,14 @@ public class Restaurant implements Comparable<Restaurant> {
 	
 	private String name;
 	
-	private Integer score;
+	private Integer rating;
 
 	public Restaurant() {}
 	
-	public Restaurant(String name, Integer score) {
+	public Restaurant(String name, Integer rating) {
 		super();
 		this.name = name;
-		this.score = score;
+		this.rating = rating;
 	}
 
 	public String getName() {
@@ -22,17 +22,17 @@ public class Restaurant implements Comparable<Restaurant> {
 		this.name = name;
 	}
 
-	public Integer getScore() {
-		return score;
+	public Integer getRating() {
+		return rating;
 	}
 
-	public void setScore(Integer score) {
-		this.score = score;
+	public void setRating(Integer rating) {
+		this.rating = rating;
 	}
 
 	@Override
 	public String toString() {
-		return "Restaurant [name=" + name + ", score=" + score + "]";
+		return "Restaurant [name=" + name + ", rating=" + rating + "]";
 	}
 
 	public void accept(Restaurant t) {
@@ -41,11 +41,11 @@ public class Restaurant implements Comparable<Restaurant> {
 
 	@Override
 	public int compareTo(Restaurant restaurant) {
-		if(this.score > restaurant.getScore()) {
+		if(this.rating > restaurant.getRating()) {
 			return 1;
 		}
 		
-		if(restaurant.getScore() > this.score) {
+		if(restaurant.getRating() > this.rating) {
 			return -1;
 		}
 		return 0;

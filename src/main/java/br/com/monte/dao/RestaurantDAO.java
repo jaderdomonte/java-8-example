@@ -8,6 +8,6 @@ import br.com.monte.model.Restaurant;
 public class RestaurantDAO {
 
 	public List<Restaurant> listAll(){
-		return Arrays.asList(new Restaurant("D.O.M", 10), new Restaurant("Arturito", 9), new Restaurant("Sal Gastronomia", 8));
+		return Arrays.asList(new Restaurant("D.O.M", 10), new Restaurant("Arturito", 7), new Restaurant("Sal Gastronomia", 5));
 	}
 }

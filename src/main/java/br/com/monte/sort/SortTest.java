@@ -1,4 +1,4 @@
-package br.com.monte.sorting;
+package br.com.monte.sort;
 
 import java.util.Collections;
 import java.util.List;
@@ -6,7 +6,7 @@ import java.util.List;
 import br.com.monte.model.Restaurant;
 import br.com.monte.service.RestaurantService;
 
-public class SortingTest {
+public class SortTest {
 
 	public static void main(String[] args) {
 		RestaurantService service = new RestaurantService();
