@@ -1,6 +1,6 @@
 package br.com.monte.model;
 
-public class Restaurant {
+public class Restaurant implements Comparable<Restaurant> {
 	
 	private String name;
 	
@@ -37,5 +37,17 @@ public class Restaurant {
 
 	public void accept(Restaurant t) {
 		System.out.println(t);
+	}
+
+	@Override
+	public int compareTo(Restaurant restaurant) {
+		if(this.score > restaurant.getScore()) {
+			return 1;
+		}
+		
+		if(restaurant.getScore() > this.score) {
+			return -1;
+		}
+		return 0;
 	}
 }
