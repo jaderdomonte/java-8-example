@@ -1,4 +1,4 @@
-package br.com.monte.lambda;
+package br.com.monte.sorting;
 
 import java.util.Collections;
 import java.util.List;
@@ -7,7 +7,7 @@ import br.com.monte.comparator.RestaurantComparator;
 import br.com.monte.model.Restaurant;
 import br.com.monte.service.RestaurantService;
 
-public class LambdaTest {
+public class SortingTest {
 
 	public static void main(String[] args) {
 		RestaurantService service = new RestaurantService();
