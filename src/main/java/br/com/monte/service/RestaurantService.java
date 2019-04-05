@@ -16,8 +16,4 @@ public class RestaurantService {
 	public List<Restaurant> listAll() {
 		return this.dao.listAll();
 	}
-	
-	public List<Restaurant> listAllSortingByRestaurantScore(){
-		return this.dao.listAllSortingByRestaurantScore();
-	}
 }
